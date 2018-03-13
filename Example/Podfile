@@ -2,12 +2,20 @@ platform :ios, '10.0'
 use_frameworks!
 inhibit_all_warnings!
 
-def test_pods
-pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots', '~> 6.3.0'
-  pod 'Nimble', '~> 7.0'
-  pod 'Quick', '~> 1.2'
+def helper_pods
+  pod 'SwiftLint', '~> 0.25'
+end
 
+def test_pods
+  pod 'Nimble-Snapshots', '~> 6.3.0'
+  pod 'Nimble', '~> 7.0.3'
+  pod 'Quick', '~> 1.2.0'
+end
+
+def ui_pods
+   pod 'EarlGrey', '~> 1.12'
+   pod 'EarlGreySnapshots', '~> 0.0.4'
+   pod 'FBSnapshotTestCase', '~> 2.1.4'
 end
 
 target 'Pastel_Example' do
@@ -16,6 +24,11 @@ target 'Pastel_Example' do
   target 'Pastel_Tests' do
     inherit! :search_paths
     test_pods
-
   end
+
+  target 'Pastel_FeatureTests' do
+    inherit! :search_paths
+    ui_pods
+  end
+
 end
