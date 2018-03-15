@@ -14,11 +14,10 @@ PODS:
   - Quick (1.2.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
-  - Nimble (~> 7.0)
+  - Nimble (~> 7.0.3)
   - Nimble-Snapshots (~> 6.3.0)
   - Pastel (from `../`)
-  - Quick (~> 1.2)
+  - Quick (~> 1.2.0)
 
 EXTERNAL SOURCES:
   Pastel:
@@ -31,6 +30,6 @@ SPEC CHECKSUMS:
   Pastel: 963a01dbd96689d6433f58b6ced223807d1cd3ab
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: 8aba263f40f24ed873345b0af0b0dddb7d926e85
+PODFILE CHECKSUM: 21165117322d21520161833b29503a174cb14aad
 
 COCOAPODS: 1.4.0

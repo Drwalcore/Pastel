@@ -41,7 +41,8 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -50,16 +51,6 @@
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "Pastel_Tests.xctest"
                BlueprintName = "Pastel_Tests"
-               ReferencedContainer = "container:Pastel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5062D030203D859100B4B1BC"
-               BuildableName = "Pastel_FeatureTests.xctest"
-               BlueprintName = "Pastel_FeatureTests"
                ReferencedContainer = "container:Pastel.xcodeproj">
             </BuildableReference>
          </TestableReference>
