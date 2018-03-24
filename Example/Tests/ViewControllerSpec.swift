@@ -5,6 +5,8 @@ import Quick
 
 class ViewControllerSpec: QuickSpec {
     override func spec() {
-        
+        describe("ViewController") {
+            var sut: ViewController!
+        }
     }
 }
