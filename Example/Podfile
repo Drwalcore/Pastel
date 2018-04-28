@@ -15,7 +15,7 @@ end
 target 'Pastel_Example' do
   pod 'Pastel', :path => '../'
 
-  target 'Pastel_Tests' do
+  target 'Pastel_ExampleTests' do
     inherit! :search_paths
     test_pods
   end

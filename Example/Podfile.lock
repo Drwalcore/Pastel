@@ -19,9 +19,16 @@ DEPENDENCIES:
   - Pastel (from `../`)
   - Quick (~> 1.2.0)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+    - Nimble
+    - Nimble-Snapshots
+    - Quick
+
 EXTERNAL SOURCES:
   Pastel:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
@@ -30,6 +37,6 @@ SPEC CHECKSUMS:
   Pastel: b0ccd2e328e41bfcd2f1e569e635287db0fcb85b
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: 16509066a5a45e2f6023eb777d51c1db04581193
+PODFILE CHECKSUM: c1fcdcabed1bd2dc84893b91ab11a47ac957e31c
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
