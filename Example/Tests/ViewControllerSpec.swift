@@ -7,6 +7,10 @@ class ViewControllerSpec: QuickSpec {
     override func spec() {
         describe("ViewController") {
             var sut: ViewController!
+
+            beforeEach {
+                sut = ViewController()
+            }
         }
     }
 }
