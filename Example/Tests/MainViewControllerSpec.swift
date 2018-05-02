@@ -21,7 +21,7 @@ class MainViewControllerSpec: QuickSpec {
                     sut.view.frame = UIScreen.main.bounds
                     sut.viewDidLoad()
 
-                    expect(sut.view).toEventually(recordDeviceAgnosticSnapshot())
+                    expect(sut.view).toEventually(haveValidDeviceAgnosticSnapshot())
                 }
             }
         }
