@@ -9,7 +9,7 @@
 import UIKit
 import Pastel
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton! {
         didSet {
             loginButton.layer.borderColor = UIColor.white.withAlphaComponent(0.12).cgColor

@@ -3,13 +3,13 @@ import Nimble
 import Nimble_Snapshots
 import Quick
 
-class ViewControllerSpec: QuickSpec {
+class MainViewControllerSpec: QuickSpec {
     override func spec() {
-        describe("ViewController") {
-            var sut: ViewController!
+        describe("MainViewController") {
+            var sut: MainViewController!
 
             beforeEach {
-                sut = ViewController()
+                sut = MainViewController()
             }
 
             afterEach {
@@ -19,7 +19,9 @@ class ViewControllerSpec: QuickSpec {
             describe("after view was loaded") {
                 it("should have valid snapshot") {
                     sut.view.frame = UIScreen.main.bounds
-                    expect(sut.view).to(recordDeviceAgnosticSnapshot())
+                    sut.viewDidLoad()
+
+                    expect(sut.view).toEventually(recordDeviceAgnosticSnapshot())
                 }
             }
         }
