@@ -11,6 +11,17 @@ class ViewControllerSpec: QuickSpec {
             beforeEach {
                 sut = ViewController()
             }
+
+            afterEach {
+                sut = nil
+            }
+
+            describe("after view was loaded") {
+                it("should have valid snapshot") {
+                    sut.view.frame = UIScreen.main.bounds
+                    expect(sut.view).to(recordDeviceAgnosticSnapshot())
+                }
+            }
         }
     }
 }
