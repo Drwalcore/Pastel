@@ -17,12 +17,13 @@ class MainViewControllerSpec: QuickSpec {
             }
 
             describe("after view was loaded") {
-                it("should have valid snapshot") {
+                beforeEach {
                     sut.view.frame = UIScreen.main.bounds
                     sut.viewDidLoad()
-
-                    expect(sut.view).toEventually(haveValidDeviceAgnosticSnapshot())
                 }
+                    it("should have valid snapshot") {
+                        expect(sut.view).toEventually(haveValidDeviceAgnosticSnapshot())
+                    }
             }
         }
     }
