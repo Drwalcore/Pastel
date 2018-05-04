@@ -18,12 +18,16 @@ class MainViewControllerSpec: QuickSpec {
 
             describe("after view was loaded") {
                 beforeEach {
-                    sut.view.frame = UIScreen.main.bounds
-                    sut.viewDidLoad()
+                    sut.loadView()
                 }
-                    it("should have valid snapshot") {
-                        expect(sut.view).toEventually(haveValidDeviceAgnosticSnapshot())
-                    }
+
+                it("should have valid snapshot") {
+                    expect(sut.view).to(haveValidDeviceAgnosticSnapshot(named: "InitialPastelFrame"))
+                }
+
+                it("should not have matching snapshot after Pastel animation") {
+                    expect(sut.view).toEventuallyNot(haveValidDeviceAgnosticSnapshot(named: "InitialPastelFrame"))
+                }
             }
         }
     }
