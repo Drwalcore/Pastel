@@ -10,6 +10,7 @@ import UIKit
 import Pastel
 
 class MainViewController: UIViewController {
+
     @IBOutlet weak var loginButton: UIButton! {
         didSet {
             loginButton.layer.borderColor = UIColor.white.withAlphaComponent(0.12).cgColor
@@ -17,10 +18,18 @@ class MainViewController: UIViewController {
             loginButton.layer.cornerRadius = 4
         }
     }
+
+    let pastelView = PastelView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let pastelView = PastelView(frame: view.bounds)
+        configurePastelView()
+    }
+
+    private func configurePastelView() {
+
+        pastelView.frame = view.bounds
 
         // MARK: - Custom Direction
 
