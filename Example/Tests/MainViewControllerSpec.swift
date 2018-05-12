@@ -18,7 +18,8 @@ class MainViewControllerSpec: QuickSpec {
 
             describe("after view was loaded") {
                 beforeEach {
-                    sut.loadView()
+                    sut.view.frame = UIScreen.main.bounds
+                    sut.viewDidLoad()
                 }
 
                 it("should have valid snapshot") {
