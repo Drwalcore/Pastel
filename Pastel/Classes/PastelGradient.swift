@@ -39,7 +39,7 @@ import UIKit
     case plumPlate
     case everlastingSky
     case happyFisher
-    
+
     public func colors() -> [UIColor] {
         switch self {
         case .warmFlame:

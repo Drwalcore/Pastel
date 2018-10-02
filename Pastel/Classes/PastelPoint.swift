@@ -18,7 +18,7 @@ public enum PastelPoint: Int {
     case topRight
     case bottomLeft
     case bottomRight
-    
+
     var point: CGPoint {
         switch self {
         case .left: return CGPoint(x: 0.0, y: 0.5)
